@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mi primera página</title>
+		<meta name="description" content="Esta es la descripción de.." />
+
+		<meta
+			property="og:url"
+			content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html"
+		/>
+		<meta property="og:type" content="article" />
+		<meta
+			property="og:title"
+			content="When Great Minds Don’t Think Alike"
+		/>
+		<meta
+			property="og:description"
+			content="How much does culture influence creative thinking?"
+		/>
+		<meta
+			property="og:image"
+			content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg"
+		/>
+	</head>
+	<body>
+		<h1>Mis primeros productos</h1>
+		<div itemscope itemtype="https://schema.org/Product">
+			<span itemprop="name">Dog Chow Purina</span>
+			<img
+				itemprop="image"
+				src="./img/dogChow.jpg"
+				alt='Dog Chow Purina'
+			/>
+			<div
+				itemprop="aggregateRating"
+				itemscope
+				itemtype="https://schema.org/AggregateRating"
+			>
+				Rated <span itemprop="ratingValue">3.5</span>/5 based on
+				<span itemprop="reviewCount">11</span> customer reviews
+			</div>
+
+			<div
+				itemprop="offers"
+				itemscope
+				itemtype="https://schema.org/Offer"
+			>
+				<!--price is 1000, a number, with locale-specific thousands separator
+              and decimal mark, and the $ character is marked up with the
+              machine-readable code "USD" -->
+				<span itemprop="priceCurrency" content="USD">$</span
+				><span itemprop="price" content="17.72">17.72</span>
+
+				<link
+					itemprop="availability"
+					href="https://schema.org/InStock"
+				/>In stock
+			</div>
+
+			Product description:
+			<span itemprop="description"
+				>Alimento seco para perros adultos minis 
+                y pequeños de 1 a 7 años de edad. 100% 
+                completo y balanceado con Extralife, 
+                una mezcla especial con antioxidantes, 
+                vitaminas y minerales que ayudan a 
+                maximizar la calidad de vida de tu 
+                perro desde adentro hacia afuera, día tras día. </span
+			>
+
+			Customer reviews:
+
+			<div
+				itemprop="review"
+				itemscope
+				itemtype="https://schema.org/Review"
+			>
+				<span itemprop="name">Excelente producto</span> - by
+				<span itemprop="author">Lisette</span>,
+				<meta itemprop="datePublished" content="2023-11-07" />November 7,
+				2023
+				<div
+					itemprop="reviewRating"
+					itemscope
+					itemtype="https://schema.org/Rating"
+				>
+					<meta itemprop="worstRating" content="1" />
+					<span itemprop="ratingValue">1</span>/
+					<span itemprop="bestRating">5</span>stars
+				</div>
+				<span itemprop="reviewBody"
+					>No recomiendo este producto para cualquier perrito
+				</span>
+			</div>
+
+			<div
+				itemprop="review"
+				itemscope
+				itemtype="https://schema.org/Review"
+			>
+				<span itemprop="name">Value purchase</span> - by
+				<span itemprop="author">Alisson</span>,
+				<meta itemprop="datePublished" content="2011-03-25" />October 3,
+				2023
+				<div
+					itemprop="reviewRating"
+					itemscope
+					itemtype="https://schema.org/Rating"
+				>
+					<meta itemprop="worstRating" content="1" />
+					<span itemprop="ratingValue">4</span>/
+					<span itemprop="bestRating">5</span>stars
+				</div>
+				<span itemprop="reviewBody"
+					>Me encantó</span
+				>
+			</div>
+		</div>
+	</body>
+</html>
