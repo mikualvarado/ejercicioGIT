@@ -155,8 +155,10 @@
 				>
 					<span itemprop="name">Not a happy cat</span> - by
 					<span itemprop="author">Ellie</span>,
-					<meta itemprop="datePublished" content="2011-04-01" />January
-					3, 2023
+					<meta
+						itemprop="datePublished"
+						content="2011-04-01"
+					/>January 3, 2023
 					<div
 						itemprop="reviewRating"
 						itemscope
@@ -166,9 +168,7 @@
 						<span itemprop="ratingValue">1</span>/
 						<span itemprop="bestRating">5</span>stars
 					</div>
-					<span itemprop="reviewBody"
-						>My cat throw up its food
-					</span>
+					<span itemprop="reviewBody">My cat throw up its food </span>
 				</div>
 
 				<div
@@ -193,7 +193,102 @@
 						>This is the best product ever. My cat loves it</span
 					>
 				</div>
-				...
+				<!--Tercero-->
+				<div itemscope itemtype="https://schema.org/Product">
+					<span itemprop="name">Bola Para Perro Uds Jw</span>
+					<img
+						itemprop="image"
+						src="./img/dogBall.jpg"
+						alt="Bola Para Perro Uds Jw"
+					/>
+					<div
+						itemprop="aggregateRating"
+						itemscope
+						itemtype="https://schema.org/AggregateRating"
+					>
+						Rated <span itemprop="ratingValue">3.5</span>/5 based on
+						<span itemprop="reviewCount">11</span> customer reviews
+					</div>
+
+					<div
+						itemprop="offers"
+						itemscope
+						itemtype="https://schema.org/Offer"
+					>
+						<!--price is 1000, a number, with locale-specific thousands separator
+                      and decimal mark, and the $ character is marked up with the
+                      machine-readable code "USD" -->
+						<span itemprop="priceCurrency" content="USD">$</span
+						><span itemprop="price" content="10.99">10.99</span>
+
+						<link
+							itemprop="availability"
+							href="https://schema.org/InStock"
+						/>In stock
+					</div>
+
+					Product description:
+					<span itemprop="description"
+						>¡Descubre nuestro increíble juguete de mascotas que
+						hará que tus amigos peludos se vuelvan locos de alegría!
+						Diseñado pensando en la diversión y el entretenimiento
+						de tus queridas mascotas, este juguete es el compañero
+						perfecto para mantenerlos activos y felices</span
+					>
+
+					Customer reviews:
+
+					<div
+						itemprop="review"
+						itemscope
+						itemtype="https://schema.org/Review"
+					>
+						<span itemprop="name">Se rompió</span> - by
+						<span itemprop="author">Max</span>,
+						<meta
+							itemprop="datePublished"
+							content="2023-03-01"
+						/>march 3, 2023
+						<div
+							itemprop="reviewRating"
+							itemscope
+							itemtype="https://schema.org/Rating"
+						>
+							<meta itemprop="worstRating" content="1" />
+							<span itemprop="ratingValue">1</span>/
+							<span itemprop="bestRating">5</span>stars
+						</div>
+						<span itemprop="reviewBody"
+							>Se rompió al primer uso
+						</span>
+					</div>
+
+					<div
+						itemprop="review"
+						itemscope
+						itemtype="https://schema.org/Review"
+					>
+						<span itemprop="name">Precio</span> - by
+						<span itemprop="author">Sergio</span>,
+						<meta
+							itemprop="datePublished"
+							content="2011-03-25"
+						/>March 25, 2011
+						<div
+							itemprop="reviewRating"
+							itemscope
+							itemtype="https://schema.org/Rating"
+						>
+							<meta itemprop="worstRating" content="1" />
+							<span itemprop="ratingValue">4</span>/
+							<span itemprop="bestRating">5</span>stars
+						</div>
+						<span itemprop="reviewBody"
+							>Muy buen precio por este juguete</span
+						>
+					</div>
+					...
+				</div>
 			</div>
 		</div>
 	</body>
